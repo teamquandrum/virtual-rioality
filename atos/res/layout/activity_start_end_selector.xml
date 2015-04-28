@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent" >
+    
+<LinearLayout 
+    android:layout_alignParentTop="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Name of this event"
+        android:textSize="22sp"
+        ></TextView>
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:hint="Enter name of this event"
+        android:textSize="22sp"
+        ></EditText>
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Select the time corresponing to this place"
+        android:textSize="22sp"
+        ></TextView>
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Select time."
+        android:onClick="startTime"
+        android:textSize="22sp"
+        ></Button>
+      
+   
+      
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Where is the place located?"
+         android:textSize="22sp"
+        ></TextView>
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Select location"
+         android:textSize="22sp"
+        android:onClick="selectLocation"
+        ></Button>
+
+
+</LinearLayout>
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:onClick="done"
+        android:layout_alignParentBottom="true"
+         android:textSize="22sp"
+        ></Button>
+    
+</RelativeLayout>

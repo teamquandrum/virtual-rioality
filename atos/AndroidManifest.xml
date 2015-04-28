@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.quandrum.atos"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="9"
+          android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS" />
+    <uses-permission android:name="android.permission.MEDIA_CONTENT_CONTROL" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true" >
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyB7xcFyVad0PH2lEgR6iwI2kFdOdmzedCo" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.quandrum.atos.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.quandrum.atos.AugmentedRealityActivity"
+            android:label="@string/title_activity_deprecated_compass"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.quandrum.AuxActivities.BusinessDisplayActivity"
+            android:label="Business"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.quandrum.AuxActivities.WebViewActivity"
+            android:label="Display"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.quandrum.AuxActivities.TouristLocationDisplayActivity"
+            android:label="Tourist Location"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.quandrum.AuxActivities.LocationChooserActivity"
+            android:label="Tourist Location Chooser"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.quandrum.atos.MainMenuActivity"
+            android:label="@string/title_activity_main_menu"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.quandrum.atos.TakePictureActivity"
+            android:label="@string/title_activity_take_picture"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example2.schedulerui.MainActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.example2.schedulerui.StartEnd"
+            android:label="Scheduling" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.example2.schedulerui.Map"
+            android:label="Map" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.example2.schedulerui.Selector"
+            android:label="Scheduling" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.example2.schedulerui.StartEndSelector"
+            android:label="Scheduling" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.example2.schedulerui.FixedLocationSelector"
+            android:label="Scheduling" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.example2.schedulerui.TouristLocationSelector"
+            android:label="Scheduling" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.example2.schedulerui.TouristSelector"
+            android:label="Scheduling" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.example2.schedulerui.DisplaySchedule"
+            android:label="Scheduling" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.deitel.slideshow.Slideshow"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light" >
+        </activity>
+        <activity
+            android:name="com.deitel.slideshow.SlideshowEditor"
+            android:label="@string/slideshow_editor"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.deitel.slideshow.SlideshowPlayer"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.quandrum.atos.Intermediate"
+            android:label="Select" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.example.infomap.InfoMap"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.example.infomap.FilterSelector"
+            android:label="Info Map" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.quandrum.atos.MainMenu2"
+            android:label="Main Menu"
+            android:screenOrientation="portrait" >
+        </activity>
+                <activity
+            android:name="com.quandrum.AuxActivities.LeaderboardActivity"
+            android:label="Leaderboard" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.quandrum.atos.NewUserActivity"
+            android:label="New User" 
+            android:screenOrientation="portrait">
+        </activity>
+         <activity
+            android:name="com.quandrum.AuxActivities.DiscountActivity"
+            android:label="Discounts" 
+            android:screenOrientation="portrait">
+        </activity>
+    </application>
+
+</manifest>
